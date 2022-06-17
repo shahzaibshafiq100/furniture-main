@@ -21,8 +21,9 @@ module.exports = {
       accent: '#286F6C',
       grey: {
         DEFAULT: '#919297',
-        secondary: '#D9D9D9',
-        tertiary: '#E7E9EB',
+        1: '#D9D9D9',
+        2: '#E7E9EB',
+        3: '#F5F5F5',
       },
       white: '#fff',
     },
