@@ -1,7 +1,36 @@
 module.exports = {
   content: ['./src/**/*.{js,jsx,ts,tsx}'],
   theme: {
-    extend: {},
+    fontFamily: {
+      primary: 'Saira',
+    },
+    container: {
+      padding: {
+        DEFAULT: '1rem',
+        lg: '3rem',
+      },
+    },
+    screens: {
+      sm: '640px',
+      md: '768px',
+      lg: '1024px',
+      xl: '1280px',
+    },
+    colors: {
+      base: '#23262F',
+      accent: '#286F6C',
+      grey: {
+        DEFAULT: '#919297',
+        secondary: '#D9D9D9',
+        tertiary: '#E7E9EB',
+      },
+      white: '#fff',
+    },
+    extend: {
+      dropShadow: {
+        primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
+      },
+    },
   },
   plugins: [],
 };
