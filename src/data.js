@@ -109,19 +109,19 @@ export const newInStore = {
   products: [
     {
       name: 'chair',
-      image: <ChairImg />,
+      // image: <ChairImg />,
     },
     {
       name: 'bed',
-      image: <BedImg />,
+      // image: <BedImg />,
     },
     {
       name: 'cupboard',
-      image: <CupboardImg />,
+      // image: <CupboardImg />,
     },
     {
       name: 'lighting',
-      image: <LightingImg />,
+      // image: <LightingImg />,
     },
   ],
 };

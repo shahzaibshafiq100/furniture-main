@@ -27,6 +27,13 @@ module.exports = {
       white: '#fff',
     },
     extend: {
+      backgroundImage: {
+        hero: 'url("/src/assets/img/hero.png")',
+        chair: 'url("/src/assets/img/chair.png")',
+        bed: 'url("/src/assets/img/bed.png")',
+        cupboard: 'url("/src/assets/img/cupboard.png")',
+        lighting: 'url("/src/assets/img/lighting.png")',
+      },
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
       },
