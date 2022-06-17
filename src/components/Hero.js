@@ -16,7 +16,7 @@ const Hero = () => {
         <h2 className='mb-[30px] max-w-[627px] mx-auto text-sm lg:text-xl'>
           {subtitle}
         </h2>
-        <button className=' px-[35px] lg:px-[80px] py-[9px] lg:py-[16px] text-xl rounded-md backdrop-blur-md bg-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.5)] transition'>
+        <button className=' px-[35px] lg:px-[80px] py-[9px] lg:py-[16px] text-xl rounded-md bg-[rgba(255,255,255,0.4)] hover:bg-[rgba(255,255,255,0.5)] backdrop-blur-md transition'>
           {buttonText}
         </button>
       </div>
