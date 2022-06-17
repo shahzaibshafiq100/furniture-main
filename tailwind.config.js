@@ -17,7 +17,7 @@ module.exports = {
       xl: '1280px',
     },
     colors: {
-      base: '#23262F',
+      primary: '#23262F',
       accent: '#286F6C',
       grey: {
         DEFAULT: '#919297',

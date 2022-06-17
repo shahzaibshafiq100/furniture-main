@@ -60,16 +60,20 @@ export const hero = {
 
 export const stats = [
   {
-    experience: '7',
+    value: '7',
+    text: 'Year Experience',
   },
   {
-    countries: '2',
+    value: '2',
+    text: 'Opened in the country',
   },
   {
-    sold: '10k+',
+    value: '10k+',
+    text: 'Furniture sold',
   },
   {
-    variants: '260+',
+    value: '260+',
+    text: 'Variant Furniture',
   },
 ];
 

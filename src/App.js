@@ -5,7 +5,7 @@ import Hero from './components/Hero';
 
 const App = () => {
   return (
-    <div className='w-full max-w-[1440px] mx-auto bg-white'>
+    <div className='w-full max-w-[1440px] h-[5000px] mx-auto bg-white'>
       <Hero />
     </div>
   );
