@@ -55,7 +55,7 @@ export const hero = {
   title: 'Creative Home Simpify your Furniture',
   subtitle:
     'Do i have consent to record this meeting gain locaion, root-and-branch, review, nor game plan who’s the goto',
-  buttonText: 'Show Now',
+  buttonText: 'Shop Now',
 };
 
 export const stats = [
