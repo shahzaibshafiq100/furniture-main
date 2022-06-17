@@ -33,6 +33,7 @@ module.exports = {
         bed: 'url("/src/assets/img/bed.png")',
         cupboard: 'url("/src/assets/img/cupboard.png")',
         lighting: 'url("/src/assets/img/lighting.png")',
+        newsletter: 'url("/src/assets/img/newsletter.png")',
       },
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
