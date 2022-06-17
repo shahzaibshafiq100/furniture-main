@@ -29,12 +29,13 @@ module.exports = {
     },
     extend: {
       backgroundImage: {
-        hero: 'url("/src/assets/img/hero.png")',
+        hero: 'url("/src/assets/img/hero-bg.png")',
         chair: 'url("/src/assets/img/chair.png")',
         bed: 'url("/src/assets/img/bed.png")',
         cupboard: 'url("/src/assets/img/cupboard.png")',
         lighting: 'url("/src/assets/img/lighting.png")',
         newsletter: 'url("/src/assets/img/newsletter.png")',
+        fade: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 25.71%, #FFFFFF 38.55%)',
       },
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
