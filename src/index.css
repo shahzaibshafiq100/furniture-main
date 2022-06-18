@@ -6,4 +6,10 @@
   body {
     @apply bg-grey-3 text-base font-primary;
   }
+  .title {
+    @apply text-[40px] leading-tight font-semibold mb-4;
+  }
+  .subtitle {
+    @apply text-[20px] leading-relaxed;
+  }
 }
