@@ -1,15 +1,17 @@
 import React, { useState, useEffect } from 'react';
 
-// import data
-import { navigation } from '../data';
 // import logo
 import Logo from '../assets/img/logo.svg';
 // import icons
-import { CgMenuRight } from 'react-icons/cg';
+import { CgMenuRight, CgClose } from 'react-icons/cg';
+import { navigation } from '../data';
+
+// import components
+import NavMobile from './NavMobile';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
-
+  const [mobileNav, setMobileNav] = useState(false);
   useEffect(() => {
     // add event listener
     window.addEventListener('scroll', () => {
@@ -34,21 +36,34 @@ const Header = () => {
           {/* logo */}
           <img className='h-6 lg:h-8' src={Logo} alt='' />
           {/* menu icon */}
-          <div className='md:hidden text-2xl lg:text-3xl text-white'>
-            <CgMenuRight />
+          <div
+            onClick={() => setMobileNav(!mobileNav)}
+            className='md:hidden text-2xl lg:text-3xl text-white cursor-pointer'
+          >
+            {mobileNav ? <CgClose /> : <CgMenuRight />}
           </div>
-          {/* nav menu mobile */}
-          <ul className='bg-primary text-white h-screen fixed bottom-0 left-0 w-3/5 md:relative md:w-auto md:h-auto md:flex md:gap-x-12 md:bg-transparent'>
-            {navigation.map((item, index) => {
-              return (
-                <li key={index}>
-                  <a className='capitalize' href={item.href}>
-                    {item.name}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
+          {/* nav */}
+          <nav className='hidden md:flex'>
+            <ul className='md:flex md:gap-x-12'>
+              {navigation.map((item, index) => {
+                return (
+                  <li key={index}>
+                    <a className='capitalize text-white' href={item.href}>
+                      {item.name}
+                    </a>
+                  </li>
+                );
+              })}
+            </ul>
+          </nav>
+          {/* nav mobile */}
+          <div
+            className={`${
+              mobileNav ? 'left-0' : '-left-full'
+            } md:hidden fixed bottom-0 w-full max-w-xs h-screen transition-all`}
+          >
+            <NavMobile />
+          </div>
         </div>
       </div>
     </header>

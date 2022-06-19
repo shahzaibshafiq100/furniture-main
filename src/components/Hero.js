@@ -16,7 +16,7 @@ const Hero = () => {
           {title}
         </h1>
         {/* subtitle */}
-        <h2 className='mb-[30px] lg:mb-[65px] max-w-[627px] mx-auto text-sm lg:text-xl'>
+        <h2 className='mb-[30px] lg:mb-[65px] max-w-[627px] mx-auto lg:text-xl'>
           {subtitle}
         </h2>
         {/* button */}
