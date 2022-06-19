@@ -7,6 +7,7 @@ import { CgMenuRight } from 'react-icons/cg';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
+  // when our scrollY is bigger than 50px setBg to true, else false
   useEffect(() => {
     window.addEventListener('scroll', () => {
       return window.scrollY > 50 ? setBg(true) : setBg(false);
@@ -15,7 +16,11 @@ const Header = () => {
   return (
     <header
       className={`${
-        bg ? 'bg-primary py-4 lg:py-6' : 'bg-none'
+        // if bg is true
+        bg
+          ? 'bg-primary py-4 lg:py-6'
+          : // if bg is false
+            'bg-none'
       } fixed left-0 py-8 z-10 w-full transition-all duration-200`}
     >
       <div className='container mx-auto'>
