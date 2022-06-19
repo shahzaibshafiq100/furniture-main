@@ -16,7 +16,7 @@ const Features = () => {
           {/* text */}
           <div className='flex-1 flex flex-col justify-end'>
             <h2 className='title'>{title}</h2>
-            <p className='subtitle mb-5 lg:mb-9'>{subtitle}</p>
+            <p className='subtitle'>{subtitle}</p>
             {/* items */}
             <div>
               {items.map((item, index) => {

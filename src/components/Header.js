@@ -9,12 +9,15 @@ import { CgMenuRight } from 'react-icons/cg';
 
 const Header = () => {
   const [bg, setBg] = useState(false);
-  // when our scrollY is bigger than 50px setBg to true, else false
+
   useEffect(() => {
+    // add event listener
     window.addEventListener('scroll', () => {
+      // when scrollY is bigger than 50px setBg to true, else false
       return window.scrollY > 50 ? setBg(true) : setBg(false);
     });
   });
+
   return (
     <header
       className={`${
@@ -31,15 +34,17 @@ const Header = () => {
           {/* logo */}
           <img className='h-6 lg:h-8' src={Logo} alt='' />
           {/* menu icon */}
-          <div className='text-2xl lg:text-3xl text-white'>
+          <div className='md:hidden text-2xl lg:text-3xl text-white'>
             <CgMenuRight />
           </div>
           {/* nav menu mobile */}
-          <ul className='md:hidden bg-primary h-screen fixed bottom-0 left-0 w-3/5 lg:w-1/4'>
+          <ul className='bg-primary text-white h-screen fixed bottom-0 left-0 w-3/5 md:relative md:w-auto md:h-auto md:flex md:gap-x-12 md:bg-transparent'>
             {navigation.map((item, index) => {
               return (
                 <li key={index}>
-                  <a href={item.href}>{item.name}</a>
+                  <a className='capitalize' href={item.href}>
+                    {item.name}
+                  </a>
                 </li>
               );
             })}

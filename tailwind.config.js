@@ -16,19 +16,19 @@ module.exports = {
       lg: '1024px',
       xl: '1280px',
     },
-    colors: {
-      primary: '#23262F',
-      accent: '#286F6C',
-      grey: {
-        DEFAULT: '#919297',
-        1: '#D9D9D9',
-        2: '#E7E9EB',
-        3: '#F5F5F5',
-      },
-      white: '#fff',
-      pink: 'pink',
-    },
     extend: {
+      colors: {
+        primary: '#23262F',
+        accent: '#286F6C',
+        grey: {
+          DEFAULT: '#919297',
+          1: '#D9D9D9',
+          2: '#E7E9EB',
+          3: '#F5F5F5',
+        },
+        white: '#fff',
+        pink: 'pink',
+      },
       backgroundImage: {
         hero: 'url("/src/assets/img/hero-bg.png")',
         chair: 'url("/src/assets/img/chair.png")',
