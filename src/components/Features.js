@@ -4,7 +4,7 @@ import React from 'react';
 import { features } from '../data';
 
 const Features = () => {
-  const { title, subtitle, image } = features;
+  const { title, subtitle, image, items } = features;
   return (
     <section>
       <div className='container mx-auto'>
@@ -14,9 +14,28 @@ const Features = () => {
             <img src={image.type} alt='' />
           </div>
           {/* text */}
-          <div className='flex-1'>
+          <div className='flex-1 flex flex-col justify-end'>
             <h2 className='title'>{title}</h2>
-            <p className='subtitle'>{subtitle}</p>
+            <p className='subtitle mb-5 lg:mb-9'>{subtitle}</p>
+            {/* items */}
+            <div>
+              {items.map((item, index) => {
+                const { icon, title, subtitle } = item;
+                return (
+                  <div className='flex mb-6 lg:last:mb-0' key={index}>
+                    <div className='text-2xl lg:text-3xl mr-4'>{icon}</div>
+                    <div>
+                      <h4 className='text-base lg:text-xl font-semibold mb-3'>
+                        {title}
+                      </h4>
+                      <p className='text-[15px] lg:text-base leading-relaxed'>
+                        {subtitle}
+                      </p>
+                    </div>
+                  </div>
+                );
+              })}
+            </div>
           </div>
         </div>
       </div>

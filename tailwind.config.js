@@ -6,7 +6,7 @@ module.exports = {
     },
     container: {
       padding: {
-        DEFAULT: '3rem',
+        DEFAULT: '1.5rem',
         // lg: '3rem',
       },
     },
@@ -26,6 +26,7 @@ module.exports = {
         3: '#F5F5F5',
       },
       white: '#fff',
+      pink: 'pink',
     },
     extend: {
       backgroundImage: {
