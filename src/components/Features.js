@@ -28,9 +28,7 @@ const Features = () => {
                       <h4 className='text-base lg:text-xl font-semibold mb-3'>
                         {title}
                       </h4>
-                      <p className='text-[15px] lg:text-base leading-relaxed'>
-                        {subtitle}
-                      </p>
+                      <p>{subtitle}</p>
                     </div>
                   </div>
                 );
