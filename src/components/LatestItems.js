@@ -9,7 +9,7 @@ import LatestItemsSlider from './LatestItemsSlider';
 const LatestItems = () => {
   const { title, subtitle, link, icon, products } = newInStore;
   return (
-    <section className='section relative bg-pink overflow-hidden min-h-[540px]'>
+    <section className='section relative overflow-hidden min-h-[540px]'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
@@ -24,7 +24,7 @@ const LatestItems = () => {
             </a>
           </div>
           {/* product slider */}
-          <div className='lg:max-w-[800px] xl:max-w-[1120px] lg:absolute lg:-right-24'>
+          <div className='lg:max-w-[800px] xl:max-w-[1000px] lg:absolute lg:-right-24'>
             <LatestItemsSlider />
           </div>
         </div>
