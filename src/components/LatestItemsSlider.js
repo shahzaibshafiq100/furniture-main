@@ -28,10 +28,6 @@ const LatestItemsSlider = () => {
             spaceBetween: 20,
           },
         }}
-        pagination={{
-          clickable: true,
-        }}
-        modules={[Pagination]}
         className='mySwiper'
       >
         {newInStore.products.map((product, index) => {
