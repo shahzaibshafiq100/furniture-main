@@ -9,7 +9,7 @@ import NewItemsSlider from './NewItemsSlider';
 const NewItems = () => {
   const { title, subtitle, link, icon } = newInStore;
   return (
-    <section className='section relative overflow-hidden min-h-[540px]'>
+    <section className='section relative overflow-hidden lg:min-h-[540px]'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row'>
           {/* text */}
@@ -29,7 +29,7 @@ const NewItems = () => {
             </div>
           </div>
           {/* product slider */}
-          <div className='lg:max-w-[800px] xl:max-w-[1000px] lg:absolute lg:-right-24'>
+          <div className='lg:max-w-[800px] xl:max-w-[990px] lg:absolute lg:-right-24'>
             <NewItemsSlider />
           </div>
         </div>
