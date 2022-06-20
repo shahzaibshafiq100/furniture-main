@@ -6,7 +6,7 @@ import { features } from '../data';
 const Features = () => {
   const { title, subtitle, image, items } = features;
   return (
-    <section>
+    <section className='section'>
       <div className='container mx-auto'>
         <div className='flex flex-col lg:flex-row lg:gap-x-[100px]'>
           {/* image */}

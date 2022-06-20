@@ -79,9 +79,9 @@ export const stats = [
 
 export const features = {
   image: <Features1Img />,
-  title: 'We Create your home more aestetic',
+  title: 'We Create your home more aesthetic',
   subtitle:
-    'Furnitre power is a software as services for multiperpose business management system',
+    'Furniture power is a software as services for multipurpose business management system',
   buttonText: 'Show Now',
   items: [
     {
@@ -113,19 +113,19 @@ export const newInStore = {
   products: [
     {
       name: 'chair',
-      // image: <ChairImg />,
+      image: <ChairImg />,
     },
     {
       name: 'bed',
-      // image: <BedImg />,
+      image: <BedImg />,
     },
     {
       name: 'cupboard',
-      // image: <CupboardImg />,
+      image: <CupboardImg />,
     },
     {
       name: 'lighting',
-      // image: <LightingImg />,
+      image: <LightingImg />,
     },
   ],
 };
