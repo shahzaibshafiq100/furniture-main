@@ -4,7 +4,7 @@ import Features from './components/Features';
 // import components
 import Header from './components/Header';
 import Hero from './components/Hero';
-import LatestItems from './components/LatestItems';
+import NewItems from './components/NewItems';
 
 const App = () => {
   return (
@@ -12,7 +12,7 @@ const App = () => {
       <Header />
       <Hero />
       <Features />
-      <LatestItems />
+      <NewItems />
     </div>
   );
 };

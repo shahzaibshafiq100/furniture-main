@@ -6,18 +6,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/pagination';
 
-// import './styles.css';
-
-// import required modules
-import { Pagination } from 'swiper';
-
 // import data
 import { newInStore } from '../data';
 
-const LatestItemsSlider = () => {
+const NewItemsSlider = () => {
   return (
     <>
       <Swiper
+        grabCursor={true}
         breakpoints={{
           320: {
             slidesPerView: 2,
@@ -35,7 +31,7 @@ const LatestItemsSlider = () => {
             <SwiperSlide className='max-w-[265px]' key={index}>
               <div className='relative'>
                 <img src={product.image.type} alt='' />
-                <div className='absolute text-white bottom-[20px] text-center w-full text-[18px] font-semibold capitalize'>
+                <div className='absolute text-white bottom-[20px] text-center w-full text-[18px] lg:text-2xl font-medium capitalize'>
                   {product.name}
                 </div>
               </div>
@@ -47,4 +43,4 @@ const LatestItemsSlider = () => {
   );
 };
 
-export default LatestItemsSlider;
+export default NewItemsSlider;
