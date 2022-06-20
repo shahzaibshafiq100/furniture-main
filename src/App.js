@@ -1,5 +1,6 @@
 import React from 'react';
 import Features from './components/Features';
+import FeaturesSecond from './components/FeaturesSecond';
 
 // import components
 import Header from './components/Header';
@@ -13,6 +14,7 @@ const App = () => {
       <Hero />
       <Features />
       <NewItems />
+      <FeaturesSecond />
     </div>
   );
 };
