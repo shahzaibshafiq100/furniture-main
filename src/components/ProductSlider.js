@@ -1,19 +1,29 @@
-import React, { useRef, useState } from 'react';
-// Import Swiper React components
+import React from 'react';
+// import swiper react components
 import { Swiper, SwiperSlide } from 'swiper/react';
-
-// Import Swiper styles
+// import swiper styles
 import 'swiper/css';
+import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-
+import '../productSlider.css';
+// import required modules
+import { Navigation, Pagination } from 'swiper';
 // import data
 import { products } from '../data';
-
+// import icons
+import { HiPlus } from 'react-icons/hi';
 const ProductSlider = () => {
   const { pages } = products;
   return (
     <>
-      <Swiper className='mySwiper'>
+      <Swiper
+        pagination={{
+          clickable: true,
+        }}
+        navigation={true}
+        modules={[Pagination, Navigation]}
+        className='min-h-[1300px]'
+      >
         {pages.map((page, index) => {
           return (
             <SwiperSlide key={index}>
@@ -25,10 +35,13 @@ const ProductSlider = () => {
                       key={index}
                     >
                       <div
-                        className='border rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px]'
+                        className='border rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative'
                         key={index}
                       >
                         <img src={product.image.type} alt='' />
+                        <div className='absolute bottom-4 right-[22px] bg-gray-200 w-9 h-9 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 transition'>
+                          <HiPlus className='text-xl text-primary' />
+                        </div>
                       </div>
                       <div className='font-semibold lg:text-xl'>
                         {product.name}
