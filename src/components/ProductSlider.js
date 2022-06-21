@@ -5,7 +5,7 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import 'swiper/css';
 import 'swiper/css/navigation';
 import 'swiper/css/pagination';
-import '../productSlider.css';
+import '../slider.css';
 // import required modules
 import { Navigation, Pagination } from 'swiper';
 // import data
@@ -22,7 +22,7 @@ const ProductSlider = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className='min-h-[1300px]'
+        className='slider-1 min-h-[1300px]'
       >
         {pages.map((page, index) => {
           return (
