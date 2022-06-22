@@ -12,6 +12,7 @@ import { Navigation, Pagination } from 'swiper';
 import { products } from '../data';
 // import icons
 import { HiPlus } from 'react-icons/hi';
+
 const ProductSlider = () => {
   const { pages } = products;
   return (
@@ -27,29 +28,25 @@ const ProductSlider = () => {
         {pages.map((page, index) => {
           return (
             <SwiperSlide key={index}>
-              <div className='grid grid-cols-2 gap-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-[30px]'>
+              <div className='grid grid-cols-2 gap-x-5 md:grid-cols-3 lg:grid-cols-4 lg:gap-[30px]'>
                 {page.productList.map((product, index) => {
+                  const { image, name, price, oldPrice } = product;
                   return (
                     <div
                       className='w-full max-w-[290px] h-[380px] text-left'
                       key={index}
                     >
-                      <div
-                        className='border rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative'
-                        key={index}
-                      >
-                        <img src={product.image.type} alt='' />
-                        <div className='absolute bottom-4 right-[22px] bg-gray-200 w-9 h-9 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 transition'>
+                      <div className='border hover:border-accent rounded-[18px] w-full max-w-[285px] h-full max-h-[292px] flex items-center justify-center mb-[15px] relative transition'>
+                        <img src={image.type} alt='' />
+                        <div className='absolute bottom-4 right-[22px] bg-gray-200 w-8 h-8 rounded-full flex justify-center items-center cursor-pointer hover:bg-gray-300 transition'>
                           <HiPlus className='text-xl text-primary' />
                         </div>
                       </div>
-                      <div className='font-semibold lg:text-xl'>
-                        {product.name}
-                      </div>
+                      <div className='font-semibold lg:text-xl'>{name}</div>
                       <div className='flex items-center gap-x-3'>
-                        <div>$ {product.price}</div>
+                        <div>$ {price}</div>
                         <div className='text-[15px] text-grey line-through'>
-                          $ {product.oldPrice}
+                          $ {oldPrice}
                         </div>
                       </div>
                     </div>

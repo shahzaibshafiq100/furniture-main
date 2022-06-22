@@ -1,7 +1,6 @@
 .slider-1 .swiper-pagination-bullet {
   background: #23262f;
 }
-
 .slider-1 .swiper-button-prev,
 .slider-1 .swiper-button-next {
   background: white;
@@ -30,4 +29,12 @@
 
 .slider-1 .swiper-pagination {
   bottom: 20px;
+}
+
+@media (max-width: 768px) {
+  .slider-1 .swiper-button-prev,
+  .slider-1 .swiper-button-next,
+  .slider-1 .swiper-pagination {
+    display: none;
+  }
 }

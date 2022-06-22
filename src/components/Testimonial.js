@@ -7,6 +7,7 @@ const Testimonial = () => {
   return (
     <section className='section'>
       <TestimonialSlider />
+      dasd
     </section>
   );
 };
