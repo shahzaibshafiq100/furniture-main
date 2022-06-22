@@ -31,7 +31,7 @@ const TestimonialSlider = () => {
                   </div>
                 </div>
                 {/* text */}
-                <div className='text-xl'>{message}</div>
+                <div className='text-xl max-w-[570px]'>{message}</div>
               </div>
             </SwiperSlide>
           );

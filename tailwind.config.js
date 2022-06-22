@@ -32,7 +32,6 @@ module.exports = {
       backgroundImage: {
         hero: 'url("/src/assets/img/hero-bg.png")',
         newsletter: 'url("/src/assets/img/newsletter.png")',
-        fade: 'linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.6) 25.71%, #FFFFFF 38.55%)',
       },
       dropShadow: {
         primary: '0px 4px 10px rgba(15, 27, 51, 0.05);',
