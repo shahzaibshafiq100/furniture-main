@@ -23,7 +23,7 @@ const ProductSlider = () => {
         }}
         navigation={true}
         modules={[Pagination, Navigation]}
-        className='slider-1 min-h-[1300px]'
+        className='productSlider min-h-[1300px]'
       >
         {pages.map((page, index) => {
           return (

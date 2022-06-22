@@ -291,21 +291,21 @@ export const testimonial = {
   image: <TestimonialImg />,
   persons: [
     {
-      image: <Avatar1Img />,
+      avatar: <Avatar1Img />,
       name: 'Josh Smith',
       occupation: 'Manager of The New York Times',
       message:
         '“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”',
     },
     {
-      image: <Avatar2Img />,
+      avatar: <Avatar2Img />,
       name: 'Brandi Johns',
       occupation: 'Manager of The New York Times',
       message:
         '“They are have a perfect touch for make something so professional ,interest and useful for a lot of people .”',
     },
     {
-      image: <Avatar3Img />,
+      avatar: <Avatar3Img />,
       name: 'Paula Pfeffer',
       occupation: 'Manager of The New York Times',
       message:

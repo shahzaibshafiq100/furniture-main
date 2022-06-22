@@ -13,10 +13,22 @@ const TestimonialSlider = () => {
   return (
     <>
       <Swiper className='' navigation={true} modules={[Navigation]}>
-        {testimonial.persons.map((item, index) => {
+        {testimonial.persons.map((person, index) => {
+          const { avatar, name, occupation, message } = person;
           return (
             <SwiperSlide key={index}>
-              <div>testimonial slide</div>
+              <div className='flex flex-col'>
+                <div className='flex items-center gap-x-5'>
+                  {/* avatar */}
+                  <img src={avatar.type} alt='' />
+                  <div>
+                    <div>{name}</div>
+                    <div>{occupation}</div>
+                  </div>
+                </div>
+                {/* text */}
+                <div>{message}</div>
+              </div>
             </SwiperSlide>
           );
         })}
