@@ -10,10 +10,11 @@ const Testimonial = () => {
   return (
     <section className='section'>
       <div className='container mx-auto'>
-        <div className='flex-1 bg-pink'>
-          <TestimonialSlider />
-        </div>
-        <div className='flex-1 bg-blue-200'>
+        <div className='flex flex-col lg:flex-row lg:gap-x-10'>
+          <div className='lg:max-w-[50%]'>
+            <h2 className='title mb-9'>{title}</h2>
+            <TestimonialSlider />
+          </div>
           <img src={image.type} alt='' />
         </div>
       </div>
