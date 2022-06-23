@@ -325,102 +325,19 @@ export const footer = {
   social: [
     {
       icon: <IoLogoYoutube />,
+      href: '#',
     },
     {
       icon: <IoLogoInstagram />,
+      href: '#',
     },
     {
       icon: <IoLogoGithub />,
+      href: '#',
     },
     {
       icon: <IoLogoFacebook />,
-    },
-  ],
-  linkSection: [
-    {
-      title: 'Our Products',
-      links: [
-        {
-          name: 'The Support Suite',
-        },
-        {
-          name: 'The Sales Suite',
-        },
-        {
-          name: 'Support',
-        },
-        {
-          name: 'Guide',
-        },
-      ],
-    },
-    {
-      title: 'Top Features',
-      links: [
-        {
-          name: 'Ticketing System',
-        },
-        {
-          name: 'Knowledge Base',
-        },
-        {
-          name: 'Community Forums',
-        },
-        {
-          name: 'Help Desk Software',
-        },
-      ],
-    },
-    {
-      title: 'Resources',
-      links: [
-        {
-          name: 'Product Support',
-        },
-        {
-          name: 'Request Demo',
-        },
-        {
-          name: 'Library',
-        },
-        {
-          name: 'Peoplepower Blog',
-        },
-      ],
-    },
-    {
-      title: 'Company',
-      links: [
-        {
-          name: 'About Us',
-        },
-        {
-          name: 'Press',
-        },
-        {
-          name: 'Investors',
-        },
-        {
-          name: 'Events',
-        },
-      ],
-    },
-    {
-      title: 'Favourite Things',
-      links: [
-        {
-          name: 'For Enterprise',
-        },
-        {
-          name: 'For Startups',
-        },
-        {
-          name: 'For Benchmark',
-        },
-        {
-          name: 'For Small Business',
-        },
-      ],
+      href: '#',
     },
   ],
   copyright: 'FurniShop 2022 - All Rights Reserved.',

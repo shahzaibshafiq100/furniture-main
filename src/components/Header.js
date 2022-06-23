@@ -4,8 +4,8 @@ import React, { useState, useEffect } from 'react';
 import Logo from '../assets/img/logo.svg';
 // import icons
 import { CgMenuRight, CgClose } from 'react-icons/cg';
+// import data
 import { navigation } from '../data';
-
 // import components
 import NavMobile from './NavMobile';
 
@@ -34,7 +34,9 @@ const Header = () => {
       <div className='container mx-auto'>
         <div className='flex justify-between items-center'>
           {/* logo */}
-          <img className='h-6 lg:h-8' src={Logo} alt='' />
+          <a href='#'>
+            <img className='h-6 lg:h-8' src={Logo} alt='' />
+          </a>
           {/* menu icon */}
           <div
             onClick={() => setMobileNav(!mobileNav)}
@@ -48,7 +50,10 @@ const Header = () => {
               {navigation.map((item, index) => {
                 return (
                   <li key={index}>
-                    <a className='capitalize text-white' href={item.href}>
+                    <a
+                      className='capitalize text-white hover:border-b transition-all'
+                      href={item.href}
+                    >
                       {item.name}
                     </a>
                   </li>
